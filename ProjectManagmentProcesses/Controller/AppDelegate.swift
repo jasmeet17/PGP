@@ -8,15 +8,48 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    /*
+     HOW TO WRITE TO REALM
+     /*let tData = TestData()
+     tData.date = Date().description
+     tData.testName = "AreaX, ProcessX"
+     tData.testScore = 72.50*/
+     
+     /*try realm.write { // can throw. mark with try.
+     realm.add(tData)
+     }*/
+     
+     */
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //STUFF FOR REALM PERSISTENCE
+        
+        /*print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+    
+        do{
+            let realm = try Realm()
+            
+        }catch{
+            print("Error : \(error)")
+        }*/
+        
+        
+        
+        
+        
+        //STUFF FOR AUTHENTICATION
+        
         
         FirebaseApp.configure()
         
