@@ -8,17 +8,24 @@
 
 import UIKit
 import Firebase
-
+import RealmSwift // persistence
 
 //ojo - cuando agregamos los resultados
 //a REALM?
-
 
 //adopt the protocols
 class ResultsViewController: UIViewController{
 
     
+    let realm = try! Realm()
+
+    //passed on from question view so we can store stuff in realm.
+    var testArea : String = ""
+    var testProcess : String = ""
+    
     var score : Float = 0.0  //passed from the question view controller.
+    
+    //only missing thing is the date of the test.
     
     //link the IBOUTLETS
     @IBOutlet weak var scoreLabel: UILabel!
@@ -29,8 +36,7 @@ class ResultsViewController: UIViewController{
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        scoreLabel.text = "\(String(score)) %"
-        
+        scoreLabel.text = String(format: "%.2f %", score) //should we add a percent at the end?
         
         
         
@@ -70,6 +76,32 @@ class ResultsViewController: UIViewController{
         
     }*/
     
+    
+    //so once the test is ended, an instance of TestData is saved to
+    //realm.
+    
+    @IBAction func endTestPressed(_ sender: Any) {
+        
+        //persist the test details to realm using our TestData Class.
+        //problems - changed the schema for the TestData Class
+        //and that might bite me in the butt.
+        
+        do{
+            try realm.write { // can throw. mark with try.
+                let testData = TestData()  // no idea wtf
+                testData.date = Date().description
+                testData.testArea =  testArea
+                testData.testProcess =  testProcess
+                testData.testScore = score
+                realm.add(testData)
+                print("saved testData from Results Screen : date: \(testData.date) , area:\(testData.testArea),process:\(testData.testProcess), score: \(testData.testScore)")
+            }
+            
+        }catch{
+            print("Error creating (C) into realm")
+        }
+        
+    }
     
     @IBAction func tryAgainPressed(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)

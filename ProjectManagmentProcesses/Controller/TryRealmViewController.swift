@@ -13,9 +13,13 @@ class TryRealmViewController: UIViewController {
 
     
     
-    @IBOutlet weak var testNameTextField: UITextField!
+    @IBOutlet weak var testAreaTextField: UITextField!
     
-    @IBOutlet weak var testScoreTextField: UITextField!  //need to cast to float
+    @IBOutlet weak var testProcessTextField: UITextField!
+
+    @IBOutlet weak var testScoreTextField: UITextField!
+    
+    
     
     @IBOutlet weak var createButton: UIButton!
     
@@ -84,10 +88,12 @@ class TryRealmViewController: UIViewController {
             do{
                 try realm.write { // can throw. mark with try.
                     testData.date = Date().description
-                    testData.testName =  testNameTextField.text!
-                    testData.testScore = Float(testScoreTextField.text!)!
+                    //just for fixing this now...
+                    testData.testArea =  testAreaTextField?.text ?? "defaultArea"
+                    testData.testProcess =  testProcessTextField?.text ?? "defaultProcess"
+                    testData.testScore = Float(testScoreTextField.text!) ?? 50.0
                     realm.add(testData)
-                    print("testData: date: \(testData.date) , name:\(testData.testName), score: \(testData.testScore)")
+                    print("testData: date: \(testData.date) , area:\(testData.testArea), process:\(testData.testProcess), score: \(testData.testScore)")
                 }
                 
             }catch{
@@ -114,7 +120,7 @@ class TryRealmViewController: UIViewController {
 
             
             for result in resultsList {
-                print("testData \(resultsList.index(of: result)): date: \(result.date) , name:\(result.testName), score: \(result.testScore)")
+                print("testData: date: \(result.date) , area:\(result.testArea), process:\(result.testProcess), score: \(result.testScore)")
             }
             
             print("---------------fetchResult:END-----------")
@@ -141,7 +147,8 @@ class TryRealmViewController: UIViewController {
             //realm
             
             let moddedTestDate = Date().description
-            let moddedTestName = "moddedTestName"
+            let moddedTestArea = "moddedTestArea"
+            let moddedTestProcess = "moddedTestProcess"
             let moddedTestScore = 99.9
             
           
@@ -154,10 +161,11 @@ class TryRealmViewController: UIViewController {
                         //just hardcoding it right now.
                         
                         testDataToModify.date = moddedTestDate
-                        testDataToModify.testName = moddedTestName
+                        testDataToModify.testArea = moddedTestArea
+                        testDataToModify.testProcess = moddedTestProcess
                         testDataToModify.testScore = Float(moddedTestScore)
                         
-                        print("updatedData date: \(resultsList[resultsList.count-1].date) , name:\(resultsList[resultsList.count-1].testName), score: \(resultsList[resultsList.count-1].testScore)")
+                        print("updatedData date: \(resultsList[resultsList.count-1].date) , area:\(resultsList[resultsList.count-1].testArea), process:\(resultsList[resultsList.count-1].testProcess), score: \(resultsList[resultsList.count-1].testScore)")
                         
                     }
                 }

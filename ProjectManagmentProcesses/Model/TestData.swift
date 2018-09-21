@@ -12,6 +12,11 @@ import RealmSwift
 
 //have to subclass this for to be able to persist.
 
+//had to change this .
+//wondering if it'll break.
+
+//doesnt match the interface ! what do i do...?
+
 class TestData : Object{
     
     
@@ -22,8 +27,10 @@ class TestData : Object{
     
     @objc dynamic var date : String = ""//Date().description//.description //does this work?
     //var time : String = Timer().description //NO IDEA if this works. ignoring for now
-    @objc dynamic var testName : String = ""
+    @objc dynamic var testArea : String = ""
     
+    @objc dynamic var testProcess : String = ""
+
     @objc dynamic var testScore : Float = 0.0
  
     //date is initialized when test data is init-ed.

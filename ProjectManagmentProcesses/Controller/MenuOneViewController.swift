@@ -22,9 +22,9 @@ class MenuOneViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         super.viewDidLoad()
         
         areasArray = allQuestions.areaArray
-
         areaPicker.delegate = self
         areaPicker.dataSource = self
+        currentSelectedArea = areasArray[0] //preventing a crash
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,6 +85,8 @@ class MenuOneViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if segue.identifier == "goToMenu"{
             
             let destinationVC = segue.destination as! MenuViewController
+            
+            print("Preparing for segue, currentSelectedArea : \(currentSelectedArea)")
             
             destinationVC.areaSelected = currentSelectedArea
             

@@ -42,6 +42,10 @@ class MenuViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         indexOfArea = areasArray.index(of: "\(areaSelected)")!
 
+        //processSelected = "\(allQuestions.processesArray[0])" //default
+        //to avoid crashing.
+        
+        processSelected = "\(allQuestions.processesArray[indexOfArea][0])"
         
         // Do any additional setup after loading the view.
         
@@ -98,9 +102,6 @@ class MenuViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         processSelected = allQuestions.processesArray[indexOfArea][row] // how does this work?
         //processes array is a [[String]]() e.g 2D array --- indexOfArea Chooses which area and row chooses which process.
 
-        testName = "\(areaSelected)\(processSelected)"
-        print("testName : \(testName)")
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -112,6 +113,14 @@ class MenuViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if segue.identifier == "goToQuestion" {
             
             let destinationVC = segue.destination as! QuestionViewController
+            
+            //added these for simplicity
+            destinationVC.testArea = areaSelected
+            destinationVC.testProcess = processSelected
+            
+            testName = "\(areaSelected)_\(processSelected)" //added an underscore ... not sure if this is going to work
+            print("Prepare for segue - testName : \(testName)")
+            
             destinationVC.selectedTestName = testName  //  [\(testName)] //need to determine what the testname is
         }
         

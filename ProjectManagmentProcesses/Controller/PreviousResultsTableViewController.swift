@@ -8,11 +8,19 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 class PreviousResultsTableViewController: UITableViewController{//, UITableViewDelegate, UITableViewDataSource  {
 
     
     //link IBOUTLETS
+    
+    //could be not an issue
+    let realm = try! Realm()
+    
+    //this must be changed later
+    var resultsList : Results<TestData>?//() //this is so we can use this results list elsewhere and not just inside the method.
+    //this unwrapping is non ideal and will have to be changed if used code to populate our tableView
     
     @IBOutlet var resultsTableView: UITableView!
     
@@ -29,6 +37,9 @@ class PreviousResultsTableViewController: UITableViewController{//, UITableViewD
         resultsTableView.register(UINib(nibName: "CustomResultsCell", bundle: nil), forCellReuseIdentifier: "customResultCell")
         
         //makes the cells fit the content
+        
+        loadResults() // gotta call this so we have something to display in the table.
+        
         configureTableView()
         
     }
@@ -39,20 +50,13 @@ class PreviousResultsTableViewController: UITableViewController{//, UITableViewD
     }
 
     // MARK: - Table view data source
-    
-    
-    //OPTIONAL ! WE don't need sections at the moment.
-    /*override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }*/
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
         //expects number of cells we want...
         
-        return 10  // we have more stuff.
+        return resultsList?.count ?? 1 // we have more stuff.
     }
     
  
@@ -69,52 +73,50 @@ class PreviousResultsTableViewController: UITableViewController{//, UITableViewD
         
         //let resultsArray = []
         
-        cell.dateLabel.text = Date().description
-        cell.resultsLabel.text = "70%"
-        cell.testArea.text = "Area 1"
-        cell.testProcess.text = "Process 1"
+        if let item = resultsList?[indexPath.row]{
+            
+            cell.dateLabel.text = item.date
+            
+            cell.testArea.text = item.testArea
+            
+            cell.testProcess.text = item.testProcess
+            
+            cell.resultsLabel.text = "\(item.testScore)"
+        } else {
+            cell.dateLabel.text = ""
+            
+            cell.testArea.text = "No Test Taken"
+            
+            cell.testProcess.text = ""
+            
+            cell.resultsLabel.text = ""
+        }
         
         return cell
     }
     
 
-    
-    // Override to support conditional editing of the table view.
-    /*override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }*/
-    
-
-    
-    // Override to support editing the table view.
-    /*override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }*/
-    
-
-    
-    // Override to support rearranging the table view.
-    /*override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }*/
-    
-
-    
-    // Override to support conditional rearranging of the table view.
-    /*override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }*/
+    //func loadResults() uses realm to fetch all the existing TestData instances.
+    func loadResults(){
+        
+        // results is [TestData]
+        // results is <TestData>()
+        resultsList = realm.objects(TestData.self)
+        
+        print("---------------loadResults():BEGIN-----------")
+        
+        //hmm not sure wtf
+        for result in resultsList! {
+            print("testData: date: \(result.date) , area:\(result.testArea), process:\(result.testProcess), score: \(result.testScore)")
+        }
+        
+        print("---------------loadResults():END-----------")
+    }
     
 
     //adjust cell size to the size of the content in the
     //results text.
+    //don't know if this works.
     func configureTableView(){
         resultsTableView.rowHeight = UITableViewAutomaticDimension
         resultsTableView.estimatedRowHeight = 120.0

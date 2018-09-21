@@ -34,9 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //STUFF FOR REALM PERSISTENCE
         
-        /*print(Realm.Configuration.defaultConfiguration.fileURL)
+        print("Realm Path: \(Realm.Configuration.defaultConfiguration.fileURL)")
         
-    
+        /*
         do{
             let realm = try Realm()
             
