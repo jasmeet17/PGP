@@ -54,12 +54,18 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet weak var progressBar: UIView!
     
+    @IBOutlet weak var testReminderLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         print("Selected Test Name : \(selectedTestName)")
         // Do any additional setup after loading the view.
+        
+        testReminderLabel.text = selectedTestName
+        
                                                                             //FOR RANDOMIZATION
         questionsList = (allQuestions.dictionary[selectedTestName]?.list)!  //HERES THE LIST
         

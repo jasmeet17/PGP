@@ -36,7 +36,7 @@ class ResultsViewController: UIViewController{
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        scoreLabel.text = String(format: "%.2f %", score) //should we add a percent at the end?
+        scoreLabel.text = String(format: "%.2f %%", score) //should we add a percent at the end?
         
         
         

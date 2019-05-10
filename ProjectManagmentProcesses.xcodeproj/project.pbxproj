@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		79ACABE56D3CA263C3634869 /* Pods_ProjectManagmentProcesses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E27E56C72DE381BF62786CB /* Pods_ProjectManagmentProcesses.framework */; };
+		C2020B7F222067D30065D9E4 /* CustomHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2020B7E222067D30065D9E4 /* CustomHeaderFooterView.swift */; };
+		C2020B81222067F00065D9E4 /* CustomHeaderFooterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2020B80222067F00065D9E4 /* CustomHeaderFooterViewCell.xib */; };
+		C2020B84222074AA0065D9E4 /* HectorAndresPerezVillatoro.png in Resources */ = {isa = PBXBuildFile; fileRef = C2020B83222074AA0065D9E4 /* HectorAndresPerezVillatoro.png */; };
 		C22B49EC21276BCB00A6CAC3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22B49EB21276BCB00A6CAC3 /* MenuViewController.swift */; };
 		C239A0BB213919650042DDF7 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239A0BA213919650042DDF7 /* TestData.swift */; };
 		C239A0BD21399AB00042DDF7 /* TryRealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239A0BC21399AB00042DDF7 /* TryRealmViewController.swift */; };
 		C26A09B22135273E00F8D5FB /* CustomResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26A09B02135273E00F8D5FB /* CustomResultsCell.swift */; };
 		C26A09B32135273E00F8D5FB /* CustomResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C26A09B12135273E00F8D5FB /* CustomResultsCell.xib */; };
+		C2718110222C7B7D006EB8AA /* Paragraph - Mentone-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C271810F222C7B7D006EB8AA /* Paragraph - Mentone-SemiBold.otf */; };
 		C2718C6F212A0522008BDA27 /* MenuOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2718C6E212A0522008BDA27 /* MenuOneViewController.swift */; };
 		C2A746602124E53500500AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A7465F2124E53500500AA1 /* AppDelegate.swift */; };
 		C2A746652124E53500500AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2A746632124E53500500AA1 /* Main.storyboard */; };
@@ -26,16 +30,21 @@
 		C2A746872125070E00500AA1 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A746862125070E00500AA1 /* QuestionBank.swift */; };
 		C2A746892125087C00500AA1 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A746882125087C00500AA1 /* Bank.swift */; };
 		C2B508CD2127438300C60A21 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2B508CC2127438300C60A21 /* GoogleService-Info.plist */; };
+		C2FC4185222C55E600F59014 /* SharpeMe_PERSONAL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2FC4184222C55E600F59014 /* SharpeMe_PERSONAL.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07D362519260BA47A2FA7E56 /* Pods-ProjectManagmentProcesses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectManagmentProcesses.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectManagmentProcesses/Pods-ProjectManagmentProcesses.release.xcconfig"; sourceTree = "<group>"; };
 		8E27E56C72DE381BF62786CB /* Pods_ProjectManagmentProcesses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectManagmentProcesses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2020B7E222067D30065D9E4 /* CustomHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderFooterView.swift; sourceTree = "<group>"; };
+		C2020B80222067F00065D9E4 /* CustomHeaderFooterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderFooterViewCell.xib; sourceTree = "<group>"; };
+		C2020B83222074AA0065D9E4 /* HectorAndresPerezVillatoro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HectorAndresPerezVillatoro.png; sourceTree = "<group>"; };
 		C22B49EB21276BCB00A6CAC3 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C239A0BA213919650042DDF7 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		C239A0BC21399AB00042DDF7 /* TryRealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryRealmViewController.swift; sourceTree = "<group>"; };
 		C26A09B02135273E00F8D5FB /* CustomResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResultsCell.swift; sourceTree = "<group>"; };
 		C26A09B12135273E00F8D5FB /* CustomResultsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomResultsCell.xib; sourceTree = "<group>"; };
+		C271810F222C7B7D006EB8AA /* Paragraph - Mentone-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Paragraph - Mentone-SemiBold.otf"; path = "fonts/andrea/Paragraph - Mentone-SemiBold.otf"; sourceTree = SOURCE_ROOT; };
 		C2718C6E212A0522008BDA27 /* MenuOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOneViewController.swift; sourceTree = "<group>"; };
 		C2A7465C2124E53500500AA1 /* ProjectManagmentProcesses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectManagmentProcesses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A7465F2124E53500500AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +60,7 @@
 		C2A746862125070E00500AA1 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		C2A746882125087C00500AA1 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		C2B508CC2127438300C60A21 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C2FC4184222C55E600F59014 /* SharpeMe_PERSONAL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SharpeMe_PERSONAL.ttf; path = "fonts/sharpe font/SharpeMe_PERSONAL.ttf"; sourceTree = SOURCE_ROOT; };
 		C3C1BD25D2777C7310E2D9EB /* Pods-ProjectManagmentProcesses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectManagmentProcesses.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectManagmentProcesses/Pods-ProjectManagmentProcesses.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +82,23 @@
 				8E27E56C72DE381BF62786CB /* Pods_ProjectManagmentProcesses.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2020B7D222067A10065D9E4 /* Custom Header */ = {
+			isa = PBXGroup;
+			children = (
+				C2020B7E222067D30065D9E4 /* CustomHeaderFooterView.swift */,
+				C2020B80222067F00065D9E4 /* CustomHeaderFooterViewCell.xib */,
+			);
+			path = "Custom Header";
+			sourceTree = "<group>";
+		};
+		C2020B822220747E0065D9E4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C2020B83222074AA0065D9E4 /* HectorAndresPerezVillatoro.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		C26A09AF2135263400F8D5FB /* Custom Cell */ = {
@@ -104,6 +131,8 @@
 		C2A7465E2124E53500500AA1 /* ProjectManagmentProcesses */ = {
 			isa = PBXGroup;
 			children = (
+				C2FC4183222C55C500F59014 /* Fonts */,
+				C2020B822220747E0065D9E4 /* Assets */,
 				C2A746732124E76600500AA1 /* Controller */,
 				C2A746722124E75F00500AA1 /* View */,
 				C2A746712124E75500500AA1 /* Model */,
@@ -127,6 +156,7 @@
 		C2A746722124E75F00500AA1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2020B7D222067A10065D9E4 /* Custom Header */,
 				C26A09AF2135263400F8D5FB /* Custom Cell */,
 				C2A746632124E53500500AA1 /* Main.storyboard */,
 				C2A746682124E53700500AA1 /* LaunchScreen.storyboard */,
@@ -148,6 +178,15 @@
 				C239A0BC21399AB00042DDF7 /* TryRealmViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C2FC4183222C55C500F59014 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C271810F222C7B7D006EB8AA /* Paragraph - Mentone-SemiBold.otf */,
+				C2FC4184222C55E600F59014 /* SharpeMe_PERSONAL.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		D3DE328F488C788584FBA484 /* Pods */ = {
@@ -219,11 +258,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2020B84222074AA0065D9E4 /* HectorAndresPerezVillatoro.png in Resources */,
+				C2FC4185222C55E600F59014 /* SharpeMe_PERSONAL.ttf in Resources */,
 				C2A7466A2124E53700500AA1 /* LaunchScreen.storyboard in Resources */,
 				C2B508CD2127438300C60A21 /* GoogleService-Info.plist in Resources */,
 				C2A746672124E53700500AA1 /* Assets.xcassets in Resources */,
+				C2718110222C7B7D006EB8AA /* Paragraph - Mentone-SemiBold.otf in Resources */,
 				C2A746652124E53500500AA1 /* Main.storyboard in Resources */,
 				C26A09B32135273E00F8D5FB /* CustomResultsCell.xib in Resources */,
+				C2020B81222067F00065D9E4 /* CustomHeaderFooterViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2718C6F212A0522008BDA27 /* MenuOneViewController.swift in Sources */,
+				C2020B7F222067D30065D9E4 /* CustomHeaderFooterView.swift in Sources */,
 				C2A746792124E83F00500AA1 /* LoginViewController.swift in Sources */,
 				C2A746872125070E00500AA1 /* QuestionBank.swift in Sources */,
 				C239A0BB213919650042DDF7 /* TestData.swift in Sources */,

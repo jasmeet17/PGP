@@ -36,6 +36,11 @@ class PreviousResultsTableViewController: UITableViewController{//, UITableViewD
         //register CustomResultsCell .Xib file here
         resultsTableView.register(UINib(nibName: "CustomResultsCell", bundle: nil), forCellReuseIdentifier: "customResultCell")
         
+        let nib = UINib(nibName: "CustomHeaderFooterViewCell", bundle: nil)
+       
+        resultsTableView.register(nib, forHeaderFooterViewReuseIdentifier: "CustomHeaderFooterViewCell")
+
+    
         //makes the cells fit the content
         
         loadResults() // gotta call this so we have something to display in the table.
@@ -144,6 +149,47 @@ class PreviousResultsTableViewController: UITableViewController{//, UITableViewD
         catch{
             print("error, problem signign out")
         }
+        
+        
+    }
+    
+    
+    // MARK: - Table view HEADER (EXPERIMENT!!!)
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        //if section 0 - > use cierta celda
+        //
+        
+        // Here, we use NSFetchedResultsController
+        // And we simply use the section name as title
+        //let currSection = fetchedResultsController.sections?[section]
+        //let title = currSection!.name
+        
+        let section = 0;
+        
+        // Dequeue with the reuse identifier
+        
+        //switch
+        /*{
+            opt 1
+            opt 2
+            opt 3
+            default
+        }*/
+        
+        if(section == 0){
+            let cell = self.tableView.dequeueReusableHeaderFooterView(withIdentifier: "CustomHeaderFooterViewCell")
+            let header = cell as! CustomHeaderFooterView
+            header.customHeaderLabel.text = "custom text for cell"
+            
+            let myImage = UIImage(named: "HectorAndresPerezVillatoro.png")
+            header.customHeaderImage.image = myImage
+            
+            return cell
+
+        }
+        //header.customHeaderImage (no se puede todavia) UI IMAGE
         
         
     }
