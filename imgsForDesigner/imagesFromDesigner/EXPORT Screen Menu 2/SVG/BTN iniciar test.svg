@@ -1,0 +1,11 @@
+<svg id="BTN_iniciar_test" data-name="BTN iniciar test" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="251.09" height="86.984" viewBox="0 0 251.09 86.984">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.108" y1="-0.085" x2="0.917" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#77eae2"/>
+      <stop offset="0.484" stop-color="#33d6ef"/>
+      <stop offset="1" stop-color="#2889f2"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_3" data-name="Rectangle 3" width="251.09" height="86.984" rx="9" transform="translate(0)" fill="url(#linear-gradient)"/>
+  <text id="INICIAR_TEST" data-name="INICIAR TEST" fill="#fff" stroke="#fcfcfc" stroke-linejoin="bevel" transform="translate(53.576 50.583)" stroke-width="0.7" font-size="20" font-family="Mentone-SemiBold, Mentone" font-weight="600" letter-spacing="0.075em"><tspan x="0" y="0">INICIAR TEST</tspan></text>
+</svg>

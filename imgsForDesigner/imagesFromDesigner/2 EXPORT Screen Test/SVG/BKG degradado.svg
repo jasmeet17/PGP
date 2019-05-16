@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="253" viewBox="0 0 375 253">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1.341" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#77eae2"/>
+      <stop offset="0.577" stop-color="#33d6ef"/>
+      <stop offset="1" stop-color="#2889f2"/>
+    </linearGradient>
+  </defs>
+  <g id="BKG_degradado" data-name="BKG degradado" transform="translate(0 -64)">
+    <rect id="Rectangle_3022" data-name="Rectangle 3022" width="375" height="93" transform="translate(0 224)" fill="#fcfcfc"/>
+    <rect id="BG" width="375" height="168.121" transform="translate(0 64)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

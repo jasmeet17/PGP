@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="242" height="84" viewBox="0 0 242 84">
+  <defs>
+    <filter id="Recuadro_BG_area" x="0" y="0" width="242" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#263d4f" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Recuadro_BG_area)">
+    <rect id="Recuadro_BG_area-2" data-name="Recuadro BG area" width="224" height="66" rx="6" transform="translate(7 7)" fill="#fff"/>
+  </g>
+</svg>

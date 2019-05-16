@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="303" height="84" viewBox="0 0 303 84">
+  <defs>
+    <filter id="Recuadro_BG_area" x="61" y="0" width="242" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#263d4f" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Recuadro_de_Area" data-name="Recuadro de Area" transform="translate(-48 -107)">
+    <g transform="matrix(1, 0, 0, 1, 48, 107)" filter="url(#Recuadro_BG_area)">
+      <rect id="Recuadro_BG_area-2" data-name="Recuadro BG area" width="224" height="66" rx="6" transform="translate(68 7)" fill="#fff"/>
+    </g>
+    <g id="TXT_Area" data-name="TXT Area">
+      <text id="ÁREA:" transform="translate(48 153)" fill="#263d4f" font-size="18" font-family="Mentone-SemiBold, Mentone" font-weight="600" letter-spacing="0.02em"><tspan x="0" y="0">ÁREA:</tspan></text>
+      <path id="Path_2" data-name="Path 2" d="M557.57,240.6h44.717" transform="translate(-500.003 -79.599)" fill="none" stroke="#77eae2" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

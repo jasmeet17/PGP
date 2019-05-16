@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="251.09" height="86.984" viewBox="0 0 251.09 86.984">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.108" y1="-0.085" x2="0.917" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#77eae2"/>
+      <stop offset="0.484" stop-color="#33d6ef"/>
+      <stop offset="1" stop-color="#2889f2"/>
+    </linearGradient>
+  </defs>
+  <rect id="BTN_Iniciar_test" data-name="BTN Iniciar test" width="251.09" height="86.984" rx="9" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="346" height="178" viewBox="0 0 346 178">
+  <defs>
+    <filter id="BKG_TARJETA_DE_TEMA" x="0" y="0" width="346" height="178" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#263d4f" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#BKG_TARJETA_DE_TEMA)">
+    <rect id="BKG_TARJETA_DE_TEMA-2" data-name="BKG TARJETA DE TEMA" width="328" height="160" rx="9" transform="translate(7 7)" fill="#fff"/>
+  </g>
+</svg>

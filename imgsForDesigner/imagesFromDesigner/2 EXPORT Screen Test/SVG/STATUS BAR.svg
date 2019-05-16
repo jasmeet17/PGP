@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="12.301" viewBox="0 0 375 12.301">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.971" y1="1.753" x2="0.061" y2="-0.685" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#77eae2"/>
+      <stop offset="0.527" stop-color="#33d6ef"/>
+      <stop offset="1" stop-color="#2889f2"/>
+    </linearGradient>
+  </defs>
+  <path id="STATUS_BAR" data-name="STATUS BAR" d="M0,0H375V12.3H0Z" fill="url(#linear-gradient)"/>
+</svg>
