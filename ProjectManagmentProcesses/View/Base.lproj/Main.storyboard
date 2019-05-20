@@ -23,74 +23,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zyk-71-RqV">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zyk-71-RqV">
+                                <rect key="frame" x="60" y="418" width="294" height="178.66666666666663"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yoc-rK-yQV" userLabel="LogoView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo Easypm-1" translatesAutoresizingMaskIntoConstraints="NO" id="jic-ra-h6L">
-                                                <rect key="frame" x="61" y="29" width="289" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-lS-rs0" userLabel="UsernamePasswordView">
-                                        <rect key="frame" x="0.0" y="234" width="414" height="438"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USUARIO O CORREO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zw-AY-CSq">
-                                                <rect key="frame" x="49.222646682023651" y="72" width="312" height="20.000000000000114"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-9m-0eU">
-                                                <rect key="frame" x="49.222646682023651" y="102" width="312" height="29.999999999999886"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="userNameTextField"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONTRASEÑA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwE-hZ-kdg">
-                                                <rect key="frame" x="49.222646682023651" y="155" width="312" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-cH-jGk">
-                                                <rect key="frame" x="49.222646682023651" y="184.99999999999994" width="312" height="30.000000000000057"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="passWordTextField"/>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cB-zn-eJs">
-                                                <rect key="frame" x="87.222646682023651" y="245" width="236" height="50.999999999999886"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="loginButton"/>
-                                                <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="23"/>
-                                                <state key="normal" title="INICIAR SESION" backgroundImage="BTN Iniciar sesion">
-                                                    <color key="titleColor" red="0.0" green="0.2590853964" blue="0.43590261470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="logInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqK-aT-uCG"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USUARIO O CORREO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zw-AY-CSq">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-9m-0eU">
+                                        <rect key="frame" x="0.0" y="39.333333333333314" width="294" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="userNameTextField"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="03J-gV-eT2"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRASEÑA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwE-hZ-kdg">
+                                        <rect key="frame" x="0.0" y="99.333333333333371" width="294" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-cH-jGk">
+                                        <rect key="frame" x="0.0" y="138.66666666666663" width="294" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="passWordTextField"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ROZ-dq-iin"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Easypm-1" translatesAutoresizingMaskIntoConstraints="NO" id="jic-ra-h6L">
+                                <rect key="frame" x="96" y="171" width="222" height="89"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cB-zn-eJs">
+                                <rect key="frame" x="108.66666666666669" y="637" width="197" height="50"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loginButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1io-Ay-0cf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="23"/>
+                                <state key="normal" title="INICIAR SESION" backgroundImage="BTN Iniciar sesion">
+                                    <color key="titleColor" red="0.0" green="0.2590853964" blue="0.43590261470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqK-aT-uCG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14901960784313725" green="0.23921568627450979" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zyk-71-RqV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GvT-tu-8Vq"/>
-                            <constraint firstItem="zyk-71-RqV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UF5-at-9Bh"/>
-                            <constraint firstItem="zyk-71-RqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qRo-sA-rf8"/>
-                            <constraint firstItem="zyk-71-RqV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="y65-3p-P3G"/>
+                            <constraint firstItem="jic-ra-h6L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CHt-HY-pOG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zyk-71-RqV" secondAttribute="trailing" constant="60" id="FSG-Gt-Tjg"/>
+                            <constraint firstItem="8cB-zn-eJs" firstAttribute="top" secondItem="zyk-71-RqV" secondAttribute="bottom" constant="40.333335876464844" id="H1H-k2-S1k"/>
+                            <constraint firstItem="zyk-71-RqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="JJm-j7-eFC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8cB-zn-eJs" secondAttribute="bottom" constant="49" id="Yay-pN-jCf"/>
+                            <constraint firstItem="8cB-zn-eJs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jbt-DG-cTt"/>
+                            <constraint firstItem="jic-ra-h6L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="lWI-WB-jak"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -739,7 +735,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BG" width="375" height="168"/>
+        <image name="BG" width="375" height="612"/>
         <image name="BKG TARJETA" width="346" height="178"/>
         <image name="BKG degradado" width="375" height="253"/>
         <image name="BKG menu rotativo" width="343" height="188"/>
@@ -760,7 +756,7 @@
         <image name="OUTLINE ENTRADA" width="263" height="72"/>
         <image name="OUTLINE SALIDA" width="264" height="72"/>
         <image name="OUTLINE TECNICAS" width="264" height="72"/>
-        <image name="Rectangulo gris BG area" width="375" height="134"/>
+        <image name="Rectangulo gris BG area" width="375" height="56"/>
         <image name="STATUS BAR" width="375" height="12"/>
         <image name="icono reloj" width="27" height="27"/>
     </resources>
