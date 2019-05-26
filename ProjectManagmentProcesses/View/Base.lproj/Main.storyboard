@@ -32,7 +32,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-9m-0eU">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@abc.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-9m-0eU">
                                         <rect key="frame" x="0.0" y="39.333333333333314" width="294" height="40"/>
                                         <accessibility key="accessibilityConfiguration" identifier="userNameTextField"/>
                                         <constraints>
@@ -48,7 +48,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-cH-jGk">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testpassword" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-cH-jGk">
                                         <rect key="frame" x="0.0" y="138.66666666666663" width="294" height="40"/>
                                         <accessibility key="accessibilityConfiguration" identifier="passWordTextField"/>
                                         <constraints>
@@ -229,68 +229,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qyx-vf-d3m" userLabel="MasterStackView">
-                                <rect key="frame" x="0.0" y="77" width="414" height="659"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qyx-vf-d3m" userLabel="MasterStackView">
+                                <rect key="frame" x="0.0" y="64" width="414" height="652"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="djP-3F-3pF" userLabel="Area Stack">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="djP-3F-3pF" userLabel="Area Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kxi-Or-sRT">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona un área" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8O-Fy-5SY">
-                                                        <rect key="frame" x="0.0" y="50" width="414" height="28"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="23"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona un área" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8O-Fy-5SY">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="EFR-pJ-kTr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="23"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-Hn-Vp4" userLabel="PickerStackView">
-                                        <rect key="frame" x="0.0" y="166" width="414" height="348"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rs5-Hn-Vp4" userLabel="PickerStackView">
+                                        <rect key="frame" x="0.0" y="103" width="414" height="391"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eiu-HZ-VoD">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xN-w4-F03">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="391"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AREA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgw-d3-EMF">
-                                                        <rect key="frame" x="0.0" y="22.333333333333229" width="414" height="20.333333333333329"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AREA:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgw-d3-EMF">
+                                                        <rect key="frame" x="35.666666666666657" y="85" width="343" height="16.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.2590853964" blue="0.5397708873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                </subviews>
-                                                <color key="tintColor" red="1" green="0.18454791179999999" blue="0.22400477150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2xN-w4-F03">
-                                                <rect key="frame" x="0.0" y="66" width="414" height="282"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BKG menu rotativo" translatesAutoresizingMaskIntoConstraints="NO" id="rF0-sT-MJq">
-                                                        <rect key="frame" x="0.0" y="46.999999999999972" width="414" height="188"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BKG menu rotativo" translatesAutoresizingMaskIntoConstraints="NO" id="rF0-sT-MJq">
+                                                        <rect key="frame" x="35.666666666666657" y="101.66666666666669" width="343" height="188"/>
                                                     </imageView>
-                                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ww-XZ-BSf">
-                                                        <rect key="frame" x="0.0" y="33" width="414" height="216"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Ww-XZ-BSf">
+                                                        <rect key="frame" x="47" y="87.666666666666657" width="320" height="215.99999999999997"/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="oAA-Jh-oUy" id="mPD-kC-aN9"/>
                                                             <outlet property="delegate" destination="oAA-Jh-oUy" id="b7m-JC-6Xx"/>
                                                         </connections>
                                                     </pickerView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="rF0-sT-MJq" firstAttribute="centerY" secondItem="2xN-w4-F03" secondAttribute="centerY" id="GBm-xX-NB3"/>
+                                                    <constraint firstItem="7Ww-XZ-BSf" firstAttribute="centerY" secondItem="rF0-sT-MJq" secondAttribute="centerY" id="H1L-Za-NY5"/>
+                                                    <constraint firstItem="rF0-sT-MJq" firstAttribute="centerX" secondItem="2xN-w4-F03" secondAttribute="centerX" id="LZm-3c-LjD"/>
+                                                    <constraint firstItem="Hgw-d3-EMF" firstAttribute="centerX" secondItem="rF0-sT-MJq" secondAttribute="centerX" id="R9y-Pt-5SP"/>
+                                                    <constraint firstItem="7Ww-XZ-BSf" firstAttribute="centerX" secondItem="rF0-sT-MJq" secondAttribute="centerX" id="bgU-4R-VzM"/>
+                                                    <constraint firstItem="rF0-sT-MJq" firstAttribute="top" secondItem="Hgw-d3-EMF" secondAttribute="bottom" id="hXU-wV-8zk"/>
+                                                    <constraint firstItem="Hgw-d3-EMF" firstAttribute="leading" relation="lessThanOrEqual" secondItem="rF0-sT-MJq" secondAttribute="leading" id="hp4-vE-htg"/>
+                                                    <constraint firstItem="Hgw-d3-EMF" firstAttribute="top" secondItem="2xN-w4-F03" secondAttribute="top" constant="85" id="wah-WA-9NG"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jim-QC-dF6" userLabel="ButtonsStackView">
-                                        <rect key="frame" x="0.0" y="552" width="414" height="107"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jim-QC-dF6" userLabel="ButtonsStackView">
+                                        <rect key="frame" x="0.0" y="532" width="414" height="120"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N34-Jk-NeS">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                                                <rect key="frame" x="81" y="0.0" width="252" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="fuc-JN-f7y"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Mentone-SemiBold" family="Mentone" pointSize="27"/>
                                                 <state key="normal" title="CONTINUAR" backgroundImage="BTN Iniciar test">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -300,8 +301,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zo-A4-iHJ">
-                                                <rect key="frame" x="0.0" y="57" width="414" height="50"/>
-                                                <state key="normal" title="    RESULTADOS ANTERIORES" image="icono reloj" backgroundImage="BTN OUTLINE">
+                                                <rect key="frame" x="81" y="70" width="252" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="V4U-nH-21L"/>
+                                                </constraints>
+                                                <state key="normal" title="RESULTADOS ANTERIORES" image="icono reloj" backgroundImage="BTN OUTLINE">
                                                     <color key="titleColor" red="0.37616663700000003" green="0.79248769910000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -309,14 +313,20 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1Zo-A4-iHJ" firstAttribute="height" secondItem="N34-Jk-NeS" secondAttribute="height" id="Eh7-qn-jKO"/>
+                                            <constraint firstItem="1Zo-A4-iHJ" firstAttribute="width" secondItem="N34-Jk-NeS" secondAttribute="width" id="rJp-wX-LWn"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Qyx-vf-d3m" firstAttribute="trailing" secondItem="Y2v-g7-jsE" secondAttribute="trailing" id="CUv-8D-Awd"/>
-                            <constraint firstItem="Y2v-g7-jsE" firstAttribute="bottom" secondItem="Qyx-vf-d3m" secondAttribute="bottom" id="mcT-ol-frh"/>
+                            <constraint firstItem="Y2v-g7-jsE" firstAttribute="bottom" secondItem="Qyx-vf-d3m" secondAttribute="bottom" constant="20" id="7en-Gw-gL8"/>
+                            <constraint firstItem="Qyx-vf-d3m" firstAttribute="trailing" secondItem="Y2v-g7-jsE" secondAttribute="trailing" id="BDW-F8-dcL"/>
+                            <constraint firstItem="Qyx-vf-d3m" firstAttribute="top" secondItem="Y2v-g7-jsE" secondAttribute="top" id="Nip-Mf-Mgt"/>
+                            <constraint firstItem="Qyx-vf-d3m" firstAttribute="leading" secondItem="Y2v-g7-jsE" secondAttribute="leading" id="zG3-hs-SzO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y2v-g7-jsE"/>
                     </view>
@@ -756,7 +766,7 @@
         <image name="OUTLINE ENTRADA" width="263" height="72"/>
         <image name="OUTLINE SALIDA" width="264" height="72"/>
         <image name="OUTLINE TECNICAS" width="264" height="72"/>
-        <image name="Rectangulo gris BG area" width="375" height="56"/>
+        <image name="Rectangulo gris BG area" width="375" height="134"/>
         <image name="STATUS BAR" width="375" height="12"/>
         <image name="icono reloj" width="27" height="27"/>
     </resources>
