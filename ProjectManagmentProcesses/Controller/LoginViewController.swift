@@ -37,18 +37,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func logInPressed(_ sender: UIButton) {
     
-        //go to menu ?
-        //if sucess.
-        
         Auth.auth().signIn(withEmail: userNameTextField.text!, password: passWordTextField.text!) { (user, error) in
             
             if(error != nil){
                 print(error!)
             }else{
-                print("Log In Successful!")
-                self.performSegue(withIdentifier: "goToMenuOne", sender: self)
+                self.performSegue(withIdentifier: "goToMenuOne", sender: nil)
             }
-            
+
         }
         
     }
