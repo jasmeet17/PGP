@@ -16,11 +16,14 @@ import Firebase
 //EVERYWHERE
 
 class LoginViewController: UIViewController {
+    
+    //MARK: - Outlets
 
     @IBOutlet weak var userNameTextField: UITextField!
     
     @IBOutlet weak var passWordTextField: UITextField!
     
+    //MARK: - Override functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +47,6 @@ class LoginViewController: UIViewController {
             }else{
                 self.performSegue(withIdentifier: "goToMenuOne", sender: nil)
             }
-
         }
         
     }
