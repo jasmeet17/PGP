@@ -43,7 +43,11 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: userNameTextField.text!, password: passWordTextField.text!) { (user, error) in
             
             if(error != nil){
-                print(error!)
+                let alertController = UIAlertController(title: "Error", message:
+                    "Invalid credentials!", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                
+                self.present(alertController, animated: true, completion: nil)
             }else{
                 self.performSegue(withIdentifier: "goToMenuOne", sender: nil)
             }
